@@ -1,4 +1,110 @@
 body{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    color: rgb(73, 73, 73)
+    color: rgb(73, 73, 73);
+    line-height: 1.7;
+ }
+
+a{
+    color: #2e9b7c;
+    transition: border .3s linear;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+a:hover{
+    border-bottom-color: transparent;
+}
+
+p{
+    margin: 0 0 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: black;
+    font-weight: normal;
+    margin: 2em 0 ;
+}
+h1{font-size: 36px;}
+h2{font-size: 32px;}
+h3{font-size: 28px;}
+h4{font-size: 24px;}
+h5{font-size: 20px;}
+h6{font-size: 16px;}
+
+sub, sup{
+    font-size: 12px;
+}
+
+blockquote{
+    border-left: #d6d6d6 solid 4px;
+    margin: 3em 0;
+    padding: .5em 0 .5em 1.5em;
+    
+}
+
+code{
+    background: #f7f7f7;
+    border-radius: 1em;
+    border: solid 1px rgb(219, 219, 219);
+    font-size: 1.2em;
+    padding: 0.2em 0.6em;
+    font-family: "courier new";
+    color: rgb(131, 131, 131);
+}
+pre code{
+    display: block;
+}
+
+ol, ul{
+    margin: 0;  
+    padding: 0;
+    padding-left: 2em;
+}
+
+li{
+    padding-left: .5em;
+}
+
+.ul-alternate{
+    list-style-type: none;
+    padding-left: 0;
+}
+.ul-alternate li{
+    border-bottom: 2px solid #bdbdbd;
+    padding-left: 0;
+}
+.ul-alternate li:last-child{
+    border: none;
+}
+
+
+ .main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    background-image: url(/Conteudo\ \ Strata/overlay.png), url(/Conteudo\ \ Strata/bg.jpg);
+    background-size: auto, cover ;
+    background-position: left top;
+    padding: 124px 64px;
+    box-sizing: border-box;
+    text-align: right;
+ }
+
+ .main-header-title{
+    font-size: 28px;
+    font-weight: normal;
+    color: rgba(240, 248, 255, 0.678); 
+ }
+ .main-header-title strong{
+    color:aliceblue;
+ }
+
+
+
+ .main-content{
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 64px;
+    box-sizing: border-box;
  }
