@@ -5,7 +5,7 @@ body{
  }
 
 a{
-    color: #2e9b7c;
+    color: #1a5745;
     transition: border .3s linear;
     text-decoration: none;
     border-bottom: 1px solid;
@@ -57,9 +57,8 @@ pre code{
 ol, ul{
     margin: 0;  
     padding: 0;
-    padding-left: 2em;
+    padding-left: 1.2em;
 }
-
 li{
     padding-left: .5em;
 }
@@ -75,6 +74,44 @@ li{
 .ul-alternate li:last-child{
     border: none;
 }
+
+.ul-icons{
+    list-style-type: none;
+    padding-left: 0;
+}
+.ul-icons li{
+    display: inline-block;
+    font-size: 2em;
+    color: #1a5745;
+}
+
+
+
+.button-default{
+    background-color: #05a877;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: #05a877 2px solid;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+.button-default-stroke{
+    background-color: white;
+    color: inherit;
+    border: #bdbdbd 2px solid;
+}
+
+.button-default-small{
+    font-size: 0.8em;
+}
+
+.button-default-full{
+    font-size: 1.5em;
+}
+
+
 
 
  .main-header{
@@ -108,3 +145,14 @@ li{
     padding: 124px 64px;
     box-sizing: border-box;
  }
+
+
+
+.row{
+    overflow: auto;
+}
+
+.col-2{
+    width: 50%;
+    float: left;
+}
