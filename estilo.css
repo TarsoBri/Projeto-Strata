@@ -95,6 +95,7 @@ li{
     border-radius: 12px;
     display: inline-block;
     font-size: 1.1em;
+    background-size: auto;
 }
 
 .button-default-stroke{
@@ -108,8 +109,52 @@ li{
 }
 
 .button-default-full{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    padding: 1em 4em;
 }
+
+
+
+.table{
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 1em;
+}
+
+.table td{
+    padding: 0.75em;
+}
+
+.table th{
+    padding: 0.75em;
+}
+
+.table thead{
+    background: #bbbbbb ;
+}
+
+.table tbody tr{
+    border-bottom: #888888 1px solid;
+}
+
+.table tbody tr:first-child{
+    border-top: solid  2px #585858  ;
+}
+
+.table tbody tr:last-child{
+    border-bottom: solid  2px #585858 ;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: #e9e8e8;
+}
+
+.table-alternate tbody, .table-alternate tbody tr:first-child, .table-alternate tbody tr:last-child {
+    border: #a7a7a7 2px solid;
+}
+
 
 
 
@@ -147,7 +192,7 @@ li{
  }
 
 
-
+/*Grade*/
 .row{
     overflow: auto;
 }
@@ -155,4 +200,8 @@ li{
 .col-2{
     width: 50%;
     float: left;
+}
+
+.col-2-3{
+      
 }
