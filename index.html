@@ -21,8 +21,8 @@
     <body>
         
         <header class="main-header"> 
-            <a href="index.html" class="main-header-link"> 
-                <img src="/Conteudo  Strata/avatar.jpg" alt="">
+            <a href="index.html" class="main-header-link image-link"> 
+                <img src="/Conteudo  Strata/Screenshot_1.png" alt="avatar" id="img-avatar">
             </a>
             <h1 class="main-header-title">
                 Exemplo de Projeto com elementos de meu aprendizado até o momento<br>
@@ -43,57 +43,60 @@
 
             <section class="main-content-section">
                 <h3>Recent Wors</h3>
+                    <div class="row">
+                        <div class="col-2">
+                            <article class="recent-works-card">
+                                <a class="image-link" href="/Conteudo  Strata/fulls/01.jpg">
+                                    <img  src="/Conteudo  Strata/thumbs/01.jpg" title="Rua">
+                                </a>
+                                <p>Magna sed consequat tempus</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
 
-                <article class="recent-works-card">
-                    <a href="/Conteudo  Strata/fulls/01.jpg">
-                        <img  src="/Conteudo  Strata/thumbs/01.jpg" title="Rua">
-                    </a>
-                    <p>Magna sed consequat tempus</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
+                            <article class="recent-works-card">
+                                <a class="image-link" href="/Conteudo  Strata/fulls/02.jpg">
+                                    <img  src="/Conteudo  Strata/thumbs/02.jpg" title="Floresta">
+                                </a>
+                                <p>Ultricies lacinia interdum</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
 
-                <article class="recent-works-card">
-                    <a href="/Conteudo  Strata/fulls/02.jpg">
-                        <img  src="/Conteudo  Strata/thumbs/02.jpg" title="Floresta">
-                    </a>
-                    <p>Ultricies lacinia interdum</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
+                            <article class="recent-works-card">
+                                <a class="image-link" href="/Conteudo  Strata/fulls/03.jpg">
+                                    <img  src="/Conteudo  Strata/thumbs/03.jpg" title="Biblioteca">
+                                </a>
+                                <p>Tortor metus commodo</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                        </div>
+                        <div class="col-2">
+                            <article class="recent-works-card">
+                                <a class="image-link" href="/Conteudo  Strata/fulls/04.jpg">
+                                    <img  src="/Conteudo  Strata/thumbs/04.jpg" title="Subindo escadas">
+                                </a>
+                                <p>Quam neque phasellus</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
 
-                <article class="recent-works-card">
-                    <a href="/Conteudo  Strata/fulls/03.jpg">
-                        <img  src="/Conteudo  Strata/thumbs/03.jpg" title="Biblioteca">
-                    </a>
-                    <p>Tortor metus commodo</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-
-                <article class="recent-works-card">
-                    <a href="/Conteudo  Strata/fulls/04.jpg">
-                        <img  src="/Conteudo  Strata/thumbs/04.jpg" title="Subindo escadas">
-                    </a>
-                    <p>Quam neque phasellus</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-
-                <article class="recent-works-card">
-                    <a href="/Conteudo  Strata/fulls/05.jpg">
-                        <img  src="/Conteudo  Strata/thumbs/05.jpg" title="Montanhas com neve">
-                    </a>
-                    <p>Nunc enim commodo aliquet</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-                
-                <article class="recent-works-card">
-                    <a href="/Conteudo  Strata/fulls/06.jpg">
-                        <img  src="/Conteudo  Strata/thumbs/06.jpg" title="Cabana na floresta">
-                    </a>
-                    <p>Risus ornare lacinia</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-                <a href="#" title="Veja Portifólio completo" class="button-default">Veja Portfólio Completo</a>
+                            <article class="recent-works-card">
+                                <a class="image-link" href="/Conteudo  Strata/fulls/05.jpg">
+                                    <img  src="/Conteudo  Strata/thumbs/05.jpg" title="Montanhas com neve">
+                                </a>
+                                <p>Nunc enim commodo aliquet</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                            
+                            <article class="recent-works-card">
+                                <a class="image-link" href="/Conteudo  Strata/fulls/06.jpg">
+                                    <img  src="/Conteudo  Strata/thumbs/06.jpg" title="Cabana na floresta">
+                                </a>
+                                <p>Risus ornare lacinia</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                            <a href="#" title="Veja Portifólio completo" class="button-default">Veja Portfólio Completo</a>
             </section>
-
+                        </div>
+                    </div>
 
             <section class="main-content-section">
                 <h3>Get in Touch</h3>
@@ -106,34 +109,36 @@
                 <div class="row">
                         <div class="col-2-3">
                             <form action="#" method="POST">
-                                <label for="name">Name</label>
-                                <input type="text" name="name" id="name">
-            
-                                <label for="email">Email</label>
-                                <input type="text" name="email" id="email">
-            
-                                <label for="message">enter your message</label>
+                                <div class="col-2">
+                                    <label for="name">Name</label>
+                                    <input placeholder="Full name" type="text" name="name" id="name">
+                                </div>
+                                <div class="col-2">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email">
+                                </div>
+                                <label for="message">Enter your message</label>
                                 <textarea name="message" id="message"></textarea>
             
-                                <input type="submit" value="Send">
+                                <input type="submit" value="Send" class="send-stroke">
                             </form>
                         </div>
 
                         <div class="col-1-3">
                             <address>
                                 <p>
-                                    <span>Address</span>
-                                    Triunfo, RS, CEP: 95840-000 Brasil
+                                    <i class="fa-solid fa-location-dot"></i> <span>Address</span>
+                                   <br> Triunfo, RS, CEP: 95840-000 Brasil
                                 </p>
                         
                                 <p>
-                                    <span>Telephone</span>
-                                    (55) 51 998390368
+                                    <i class="fa-solid fa-phone"></i> <span>Telephone</span>
+                                   <br> (55) 51 998390368
                                 </p>
                                 
                                 <p>
-                                    <span>E-mail</span>
-                                    tarsobrietzkeiracet@gmail.com
+                                    <i class="fa-solid fa-envelope"></i> <span>E-mail</span>
+                                   <br> tarsobrietzkeiracet@gmail.com
                                 </p>
                             </address>
                         </div>
@@ -399,8 +404,8 @@
                         <label for="msg">Message:</label>
                         <textarea placeholder="type your message" id="msg"></textarea>
 
-                        <input type="submit" class="button-default" value="To send">
-                        <input type="reset" class="button-default-stroke" value="To clean">
+                        <input type="submit" class="send-stroke" value="To send">
+                        <input type="reset" class="send" value="To clean">
                         
                     </form>
                         
