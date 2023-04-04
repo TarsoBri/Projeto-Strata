@@ -127,7 +127,7 @@ input, label, textarea, select{
 }
 
 input, textarea, select{
-    background: #d6d6d6;
+    background: #e4e4e4;
     padding: 15px;
     border-radius: 7px;
     border: transparent 3px solid;
@@ -209,12 +209,40 @@ textarea{
 
 .recent-works-card img{
     border-radius: 10px;
-}
-#img-avatar{
-    width: 35%;
-    border-radius: 100%;
     overflow: hidden;
 }
+#img-avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-left{
+    display: inline-block;
+    float: left;
+    margin: 0 20px 10px 0;
+    border-radius: 10%;
+}
+
+p{
+    display: inline-block;
+}
+.img-right{
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    border-radius: 10%;
+   
+}
+
+
+
+
+
+
+
+
 
 
  .main-header{
