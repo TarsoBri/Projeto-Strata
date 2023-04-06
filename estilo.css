@@ -2,6 +2,7 @@ body{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     color: rgb(73, 73, 73);
     line-height: 1.7;
+    overflow-x: auto ;
  }
  img{
     max-width: 100%;
@@ -15,6 +16,13 @@ a{
 }
 a:hover{
     border-bottom-color: transparent;
+}
+
+.hidden{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 p{
@@ -96,17 +104,29 @@ li{
     background-color: #05a877;
     color: white;
     padding: 0.7em 1.5em;
-    border: #05a877 2px solid;
+    border: #05a877 3px solid;
     border-radius: 12px;
     display: inline-block;
     font-size: 1.1em;
     background-size: auto;
+    transition: all .2s;
+    cursor: pointer;
+}
+.button-default:hover{
+    background-color: #27b68b;
+    border: 3px solid white;
 }
 
 .button-default-stroke{
     background-color: white;
     color: inherit;
-    border: #bdbdbd 2px solid;
+    border: #bdbdbd 3px solid;
+    transition: all 0.5s;
+}
+.button-default-stroke:hover{
+    border: #05a877 3px solid;
+    background: none;
+    color:  #27b68b;
 }
 
 .button-default-small{
@@ -155,9 +175,17 @@ textarea{
 .send{
     width: 25%;
     background-color: white;
-    border: 2px #ccc solid;
+    border: 3px #ccc solid;
     margin-left: 30px ; 
+    border-radius: 12px;
+    transition: all .5s;
+    cursor: pointer;
 }
+.send:hover{
+    border: 3px #05a877 solid;
+    color:  #27b68b;
+}
+
 
 
 
@@ -203,6 +231,7 @@ textarea{
 
 
 
+
 .image-link{
     border: none;
 }
@@ -212,8 +241,8 @@ textarea{
     overflow: hidden;
 }
 #img-avatar{
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -284,6 +313,49 @@ textarea{
 
 
 
+ .main-footer{
+    position: fixed;
+    width: 35%;
+    bottom: 0;
+    left: 0;
+    padding: 0 70px 140px 0;
+    box-sizing: border-box;
+    text-align: right;
+    
+ }
+
+.ul-icons{
+    font-size: 20px;
+    
+}
+
+.icon-link{
+   border: none;
+   color: #ffffff7a;
+   transition: all .3s;
+}
+.icon-link:hover{
+    color: #18926e;
+}
+
+
+.copyright{
+    color: #ffffff7a;
+    list-style: none;
+}
+
+
+.copyright a{
+    color: #ffffffbb;
+    transition: all .3s;
+}
+.copyright a:hover{
+    color: #18926e;
+}
+
+
+
+
 /*Grid*/
 .row{
     overflow: auto;
@@ -318,6 +390,6 @@ textarea{
     margin-left: 2%;
 }
 
-.col-2-3 + .col-1-3, .col-1-3 + .col-2-3{
+.col-2-3 + .col-1-3{
     margin-left: 2%;
 }
